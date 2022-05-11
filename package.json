@@ -1,0 +1,11 @@
+{
+  "name": "hello-world-dapp",
+  "version": "1.0.0",
+  "description": "HelloWorld project for understanding of solidity react ethers.js and hardhat",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vishal Srivastava",
+  "license": "ISC"
+}
