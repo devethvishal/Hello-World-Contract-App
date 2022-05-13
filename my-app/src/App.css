@@ -13,6 +13,8 @@ body {
     flex-direction: column;
     color:#4f72f0 ; 
     border-style: dashed;
+    box-shadow: 50px;
+  
      
     
 }
@@ -45,3 +47,7 @@ input{
     line-height: 32px;
     margin: auto;
 }
+input:focus{
+    outline: none;
+}
+

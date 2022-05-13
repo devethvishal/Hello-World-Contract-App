@@ -47,6 +47,7 @@ export const HelloWorld = () => {
   function addSmartContractListener() {
     contractHello.on("contractMessageUpdated", (oldMsg,newMsg) => {
       setMessage(newMsg);
+      setStatus("Input your desired message☝");
     });
   }
 
@@ -80,11 +81,14 @@ export const HelloWorld = () => {
 
   const updateMessage = async () => {
     console.log("Update message called");
-    const tx = await contractHello.updateMessage(newMessage);
-    addSmartContractListener();
-    
+    const msg= newMessage;
     setNewMessage("");
     setStatus("Your Message is upadated and will take some time to reflect.");
+    const tx = await contractHello.updateMessage(msg);
+    addSmartContractListener();
+    
+    
+    
   };
 
   return (
