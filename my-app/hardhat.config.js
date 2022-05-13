@@ -1,7 +1,7 @@
-require('dotenv').config();
+
 require("@nomiclabs/hardhat-ethers");
 
-const { ALCHEMY_API_URL, METAMASK_PRIVATE_KEY } = process.env;
+const {ALCHEMY_API_URL, METAMASK_PRIVATE_KEY} = require('react-dotenv');
 
 module.exports = {
    solidity: "0.7.3",
@@ -13,4 +13,5 @@ module.exports = {
          accounts: [`0x${METAMASK_PRIVATE_KEY}`]
       }
    },
+  
 }

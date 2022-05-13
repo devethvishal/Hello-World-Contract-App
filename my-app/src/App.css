@@ -1,0 +1,47 @@
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    color:#254cdd; 
+}
+
+.box{
+    height: 500px;
+    width: 40%;
+    
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    color:#4f72f0 ; 
+    border-style: dashed;
+     
+    
+}
+.btn {
+    width: 20%;
+    margin: auto;
+    background-color: #254cdd;
+    color: white;
+    border: none;
+    height: 30px;
+    border-radius: 10px;
+}
+.account-btn{
+    width: 30%;
+    margin: auto;
+    background-color: #254cdd;
+    color: white;
+    border: none;
+    height: 30px;
+    border-radius: 10px;
+}
+input{
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    font-size: 16px;
+    width: 80%;
+    border-color: rgba(4, 4, 5, 0.1);
+    line-height: 32px;
+    margin: auto;
+}

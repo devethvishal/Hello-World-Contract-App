@@ -1,10 +1,10 @@
-require('dotenv').config();
-const {ALCHEMY_API, ALCHEMY_API_URL, METAMASK_PRIVATE_KEY,CONTRACT_ADDRESS} = process.env;
+import env from 'react-dotenv';
 
-
-export function test() {
+export function Interact() {
+  //const name = 'Vishal'
+  
   return (
-    <div>{ALCHEMY_API}</div>
+    <div><p>{console.table(env)}</p></div>
   )
 }
 
